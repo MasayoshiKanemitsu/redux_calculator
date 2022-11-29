@@ -1,0 +1,54 @@
+#root {
+  width: 200px;
+  margin: auto;
+
+  .result {
+    background-color: black;
+    padding: 10px 5px;
+    &Value {
+      color: white;
+      text-align: end;
+      font-size: 30px;
+    }
+  }
+
+  .button-wrapper {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+
+    button {
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      margin: 5px;
+      background-color: #555;
+      border: none;
+      font-size: 25px;
+      color: #fff;
+      padding: 0;
+      &:hover {
+        background-color: #999;
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+
+    .operator {
+      display: flex;
+      flex-direction: column;
+
+      button {
+        background-color: orange;
+        &:hover {
+          background-color: #ffc7af;
+        }
+        &:focus {
+          background-color: white;
+          color: orange;
+        }
+      }
+    }
+  }
+}
